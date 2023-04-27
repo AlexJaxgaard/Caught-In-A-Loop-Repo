@@ -5,7 +5,7 @@ using UnityEngine.UI;
 using System;
 
 
-public class VolumeSlider : MonoBehaviour
+public class SliderValue : MonoBehaviour
 {
     public Slider SliderToUse;
     public Text textToChange;
@@ -16,6 +16,6 @@ public class VolumeSlider : MonoBehaviour
 
     void Update()
     {
-        textToChange.text = "" + Math.Round(SliderToUse.value, 0);
+        textToChange.text = "" + Math.Round(SliderToUse.value, 0) + "%";
     }
 }
