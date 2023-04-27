@@ -134,7 +134,6 @@ GameObject:
   - component: {fileID: 130654254}
   - component: {fileID: 130654253}
   - component: {fileID: 130654255}
-  - component: {fileID: 130654256}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -161,7 +160,7 @@ VideoPlayer:
   m_RenderMode: 2
   m_AspectRatio: 2
   m_DataSource: 0
-  m_PlaybackSpeed: 3.7
+  m_PlaybackSpeed: 1
   m_AudioOutputMode: 2
   m_TargetAudioSources: []
   m_DirectAudioVolumes: []
@@ -207,18 +206,6 @@ MonoBehaviour:
   - {fileID: 32900000, guid: 0e6b095a748514649a45e009ed10e38a, type: 3}
   - {fileID: 32900000, guid: 769b55efdb0772e4f84697dedba0e725, type: 3}
   nextScene: Choice1 - Door or Window
---- !u!114 &130654256
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 130654252}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d541419388d4745a8847066a652a34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &194569812
 GameObject:
   m_ObjectHideFlags: 0

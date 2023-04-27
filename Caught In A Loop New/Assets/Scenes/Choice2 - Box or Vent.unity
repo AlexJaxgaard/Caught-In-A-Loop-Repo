@@ -278,7 +278,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Check Box
 --- !u!222 &196389803
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -491,7 +491,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Button
+  m_Text: Check Vent
 --- !u!222 &739202125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -512,6 +512,7 @@ GameObject:
   - component: {fileID: 941300728}
   - component: {fileID: 941300727}
   - component: {fileID: 941300726}
+  - component: {fileID: 941300729}
   m_Layer: 5
   m_Name: Button (Legacy) (1)
   m_TagString: Untagged
@@ -584,7 +585,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2101857906}
+      - m_Target: {fileID: 941300729}
         m_TargetAssemblyTypeName: StartGame_Script, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -634,6 +635,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 941300724}
   m_CullTransparentMesh: 1
+--- !u!114 &941300729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 941300724}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcca225160792415dac889f0bcd24be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1094659152
 GameObject:
   m_ObjectHideFlags: 0
@@ -719,6 +732,7 @@ GameObject:
   - component: {fileID: 1870144512}
   - component: {fileID: 1870144511}
   - component: {fileID: 1870144510}
+  - component: {fileID: 1870144513}
   m_Layer: 5
   m_Name: Button (Legacy)
   m_TagString: Untagged
@@ -791,7 +805,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 2101857906}
+      - m_Target: {fileID: 1870144513}
         m_TargetAssemblyTypeName: StartGame_Script, Assembly-CSharp
         m_MethodName: LoadScene
         m_Mode: 5
@@ -841,6 +855,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1870144508}
   m_CullTransparentMesh: 1
+--- !u!114 &1870144513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1870144508}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fcca225160792415dac889f0bcd24be9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2101857905
 GameObject:
   m_ObjectHideFlags: 0
@@ -853,7 +879,6 @@ GameObject:
   - component: {fileID: 2101857909}
   - component: {fileID: 2101857908}
   - component: {fileID: 2101857907}
-  - component: {fileID: 2101857906}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -861,18 +886,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &2101857906
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2101857905}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e1d541419388d4745a8847066a652a34, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &2101857907
 MonoBehaviour:
   m_ObjectHideFlags: 0
