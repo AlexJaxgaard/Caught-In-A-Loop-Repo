@@ -133,7 +133,8 @@ GameObject:
   m_Component:
   - component: {fileID: 196600830}
   - component: {fileID: 196600829}
-  - component: {fileID: 196600828}
+  - component: {fileID: 196600831}
+  - component: {fileID: 196600832}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -141,22 +142,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &196600828
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 196600827}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fbba5d99c0c9584eae57ecd16955985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoClips:
-  - {fileID: 32900000, guid: 046215f846f502a47a5f7ea0ec08802c, type: 3}
-  - {fileID: 32900000, guid: cf71681bcace69d488ac0f7a84f763d2, type: 3}
-  nextScene: 
 --- !u!328 &196600829
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -205,6 +190,33 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &196600831
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196600827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3959c5f71c3925c40ac753d69a32248e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  defaultScene: Killer walks
+  videoClips:
+  - {fileID: 32900000, guid: 3c7c6535e7100a84d8a4800de57f8fa5, type: 3}
+--- !u!114 &196600832
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 196600827}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78c637a20219eae44bac58026b4389de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &370228913
 GameObject:
   m_ObjectHideFlags: 0
