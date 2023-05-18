@@ -16,8 +16,7 @@ public class Difficulty_SliderValue : MonoBehaviour
 
     void Update()
     {
-        Math.Round(SliderToUse.value, 0)
-        if (SliderToUse.value >= 25)
+        
 
         textToChange.text = "" + Math.Round(SliderToUse.value, 0) + "%";
     }
