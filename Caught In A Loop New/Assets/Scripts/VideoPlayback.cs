@@ -11,6 +11,7 @@ public class VideoPlayback : MonoBehaviour
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
     [SerializeField] private string nextScene;
+    
 
 
     private void Awake()

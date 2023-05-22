@@ -241,7 +241,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -404.1603, y: -68.54581}
+  m_AnchoredPosition: {x: -370, y: -250}
   m_SizeDelta: {x: 147.6794, y: 64.9084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1327612091
@@ -297,7 +297,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: CheckDoor
+          m_StringArgument: InspectBox intro
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1327612092
@@ -375,7 +375,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1384891454}
   m_Enabled: 1
-  m_VideoClip: {fileID: 32900000, guid: 08ad3007f12d55641bc52b52d671512f, type: 3}
+  m_VideoClip: {fileID: 32900000, guid: 064d32c00a033134aaa2c10234dc75ef, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
@@ -556,7 +556,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 191, y: -68.54581}
+  m_AnchoredPosition: {x: 370, y: -250}
   m_SizeDelta: {x: 147.6794, y: 64.9084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1662295861
@@ -809,7 +809,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Check Door
+  m_Text: Inspect Box
 --- !u!222 &1873943902
 CanvasRenderer:
   m_ObjectHideFlags: 0

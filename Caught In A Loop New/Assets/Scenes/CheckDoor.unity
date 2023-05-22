@@ -155,8 +155,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoClips:
   - {fileID: 32900000, guid: 3c2fc188b8b6899439115d9b34174228, type: 3}
-  - {fileID: 32900000, guid: affbcb886f77d98468f75013ac3a3811, type: 3}
-  nextScene: Choice2 - Box or Vent
+  - {fileID: 32900000, guid: 73bf20ef95844714fa558a5bee32f5ff, type: 3}
+  nextScene: Choice cctv or room
 --- !u!328 &396394967
 VideoPlayer:
   m_ObjectHideFlags: 0

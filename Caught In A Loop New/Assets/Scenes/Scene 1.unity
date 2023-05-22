@@ -202,10 +202,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClips:
-  - {fileID: 32900000, guid: 6a5a57b2f5757be4ca3da2a9d5f5a4eb, type: 3}
+  - {fileID: 32900000, guid: 1d6fa3c9b29d7084db80896844f374f7, type: 3}
   - {fileID: 32900000, guid: 0e6b095a748514649a45e009ed10e38a, type: 3}
-  - {fileID: 32900000, guid: 769b55efdb0772e4f84697dedba0e725, type: 3}
-  nextScene: Choice1 - Door or Window
+  - {fileID: 32900000, guid: 7b087e9602d342e49b9c6465d414bd6c, type: 3}
+  nextScene: Choice Stay or not
 --- !u!1 &194569812
 GameObject:
   m_ObjectHideFlags: 0
