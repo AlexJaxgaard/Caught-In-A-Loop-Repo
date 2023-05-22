@@ -978,6 +978,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1175672075}
   - component: {fileID: 1175672074}
+  - component: {fileID: 1175672076}
   m_Layer: 5
   m_Name: Difficulty_Slider
   m_TagString: Untagged
@@ -1032,7 +1033,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 100
   m_WholeNumbers: 0
-  m_Value: 100
+  m_Value: 50
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1059,6 +1060,20 @@ RectTransform:
   m_AnchoredPosition: {x: 247.43, y: 82}
   m_SizeDelta: {x: 494.85, y: 61.86}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1175672076
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1175672073}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6110ba981a1aa0d48a108fb410e83b93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SliderToUse: {fileID: 1175672074}
+  textToChange: {fileID: 1728226683}
 --- !u!1 &1206508897
 GameObject:
   m_ObjectHideFlags: 0
@@ -1936,8 +1951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 587.0002, y: 81.999985}
-  m_SizeDelta: {x: 138.14, y: 88.11}
+  m_AnchoredPosition: {x: 598.39435, y: 81.999985}
+  m_SizeDelta: {x: 160.9282, y: 88.11}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1728226682
 MonoBehaviour:
@@ -1953,6 +1968,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SliderToUse: {fileID: 1175672074}
   textToChange: {fileID: 1728226683}
+  currentValue: 0
 --- !u!114 &1728226683
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1986,7 +2002,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 100%
+  m_Text: Average
 --- !u!222 &1728226684
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -9,6 +9,7 @@ public class Difficulty_SliderValue : MonoBehaviour
 {
     public Slider SliderToUse;
     public Text textToChange;
+    private double currentValue;
 
     void Start()
     {
@@ -16,8 +17,24 @@ public class Difficulty_SliderValue : MonoBehaviour
 
     void Update()
     {
-        
+        currentValue = Math.Round(SliderToUse.value);
+        if (currentValue == 0 || currentValue < 25)
+        {
+            textToChange.text = "Easy";
+        } else if (currentValue >= 25 && currentValue < 75)
+        {
+            textToChange.text = "Average";
+        } else if (currentValue >= 75)
+        {
+            textToChange.text = "Hard";
+        }
 
-        textToChange.text = "" + Math.Round(SliderToUse.value, 0) + "%";
+        
+    }
+
+
+    public double getCurrentValue()
+    {
+        return currentValue;
     }
 }

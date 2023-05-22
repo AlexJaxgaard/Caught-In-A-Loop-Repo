@@ -110,6 +110,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SceneSelector.unity
     guid: 73c18f11858224bd8959932200ccdc99
+  - enabled: 1
+    path: Assets/Scenes/GameOver_TimeRanOut.unity
+    guid: 48d9e02233b6bbc4d90a2899063f865f
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
