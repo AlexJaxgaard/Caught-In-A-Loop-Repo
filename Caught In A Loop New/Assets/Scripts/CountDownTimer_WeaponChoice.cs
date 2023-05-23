@@ -7,7 +7,7 @@ using UnityEngine.SceneManagement;
 using UnityEngine.Video;
 using UnityEngine.SceneManagement;
 
-public class CountDownTimer_WeaponChoice : MonoBehaviour
+public class CountDownTimer : MonoBehaviour
 {
     public Slider SliderToUse;
     public Text textToChange;
@@ -39,7 +39,7 @@ public class CountDownTimer_WeaponChoice : MonoBehaviour
         if (targetTime <= 0.0f)
         {
             targetTime= 0.0f;
-            
+            timerEnded();
         } else
         {
             targetTime -= Time.deltaTime;
@@ -48,12 +48,11 @@ public class CountDownTimer_WeaponChoice : MonoBehaviour
 
     }
 
-    public double getTime()
+    void timerEnded()
     {
-        return targetTime;
+        
+        SceneManager.LoadScene("GameOver_TimeRanOut");
     }
-
-   
 
 
 }

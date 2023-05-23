@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9dfb56ba-f569-4bec-832f-e843d66d1904" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Scenes/CheckBox.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/CheckBox.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/CheckDoor.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/CheckDoor.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Scenes/Scene 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/../Scenes/Scene 1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/../../ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-    </list>
+    <list default="true" id="9dfb56ba-f569-4bec-832f-e843d66d1904" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +30,7 @@
       <updated>1684222424403</updated>
       <workItem from="1684222425796" duration="23000" />
       <workItem from="1684226473571" duration="108000" />
+      <workItem from="1684832186883" duration="6000" />
     </task>
     <servers />
   </component>
