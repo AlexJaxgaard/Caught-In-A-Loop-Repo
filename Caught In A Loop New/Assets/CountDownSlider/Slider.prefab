@@ -108,7 +108,7 @@ MonoBehaviour:
   textToChange: {fileID: 0}
   targetTime: 1.5
   videoClips:
-  - {fileID: 32900000, guid: 064d32c00a033134aaa2c10234dc75ef, type: 3}
+  - {fileID: 32900000, guid: 142be92ee9f1466479b37dccaff2ad04, type: 3}
 --- !u!1 &9086599971982130239
 GameObject:
   m_ObjectHideFlags: 0
