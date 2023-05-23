@@ -8,37 +8,67 @@ using UnityEngine.WSA;
 
 public class HighScore : MonoBehaviour
 {
-    double[] scores;
+
     public String Path_To_File;
+    String[] ScoreArray;
     public Text highScoreText;
+    int current;
+    StreamWriter write;
 
     // Start is called before the first frame update
     void Start()
     {
-        Path_To_File = "";
-        // Read a file
-        string readText = File.ReadAllText(Path_To_File);
-        String[] highScoreArray = readText.Split(";");
-
-        int current = TimeSinceLevelLoad.getTime();
-        int hej = int.Parse(highScoreArray[0]);
+       
+        Path_To_File = "./Assets/GameOver/hej.txt";
 
         
+        
 
-        if (hej < current)
-        {
-
-        } else
-        {
-            highScoreText.text = hej.ToString() + "s";
-        }
+        addToFile(current);
+    
+        openFile();
+        setNewHighScore();
+        
+        
 
 
     }
 
+    private void openFile()
+    {
+        write = new StreamWriter(Path_To_File);
+        ScoreArray = write.ToString().Split(";");
+        
+    }
+
+    private void addToFile(int score)
+    {
+        write.Write(score + ";");
+        
+    }
+
     private void setNewHighScore()
     {
-        //Change file
+        write.Close();
+        openFile();
+
+        if (ScoreArray.Length == 1)
+        {
+            highScoreText.text = ScoreArray[0];
+            return;
+        }
+        
+        int currentEntry = int.Parse(ScoreArray[0]);
+       for (int i = 1; i < ScoreArray.Length; i++)
+        {
+                if (int.Parse(ScoreArray[i]) < currentEntry)
+                {
+                    currentEntry = int.Parse(ScoreArray[i]);
+                }
+            
+        }
+       
+       highScoreText.text = currentEntry.ToString();
     }
 
     // Update is called once per frame

@@ -448,6 +448,18 @@ MonoBehaviour:
           m_StringArgument: Scene 1
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1172010050}
+        m_TargetAssemblyTypeName: TimeSinceLevelLoad, Assembly-CSharp
+        m_MethodName: StartTime
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &532243812
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -910,8 +922,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14f69c89692691b4783244280a5bfece, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MyButton: {fileID: 532243811}
-  m_MyText: {fileID: 6502439251318395216, guid: 733806a0cbabcee4795476475e2e166d, type: 3}
+  gameOverTime: {fileID: 3948077003371952672, guid: 83355306414f63a479f0c78f054b766a, type: 3}
 --- !u!4 &1172010051
 Transform:
   m_ObjectHideFlags: 0

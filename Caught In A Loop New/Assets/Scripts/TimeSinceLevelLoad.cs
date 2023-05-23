@@ -10,32 +10,48 @@ using UnityEngine.UI;
 
 public class TimeSinceLevelLoad : MonoBehaviour
 {
-    public Button m_MyButton;
-    public Text m_MyText;
-    static int timeSinceLevelLoaded;
-
-    void Awake()
+    public static Button m_MyButton;
+    public Text gameOverTime;
+    int totalTime = 0;
+    double timeInMainMenu = 0;
+    
+    void Start()
     {
         // Don't destroy the GameObject when loading a new Scene
         DontDestroyOnLoad(gameObject);
-        // Make sure the Canvas isn't deleted so the UI stays on the Scene load
-        DontDestroyOnLoad(GameObject.Find("Canvas"));
+
+        
 
      
     }
 
     void Update()
     {
-        int timeSinceLevelLoadInt = (int)Time.timeSinceLevelLoad;
-        timeSinceLevelLoaded = timeSinceLevelLoadInt;
+        Scene scene = SceneManager.GetActiveScene();
+        if (scene.name == "GameOver" || scene.name == "GameOver_TimeRanOut")
+        {
+
+            gameOverTime.text = totalTime - timeInMainMenu + "s";
+        } else
+        {
+            totalTime = (int)Time.time;
+        }
+
+        
+       
         // Output the time since the Scene loaded to the screen using this label
-        m_MyText.text = timeSinceLevelLoadInt.ToString() + "s";
+        
+        
     }
 
-    public static int getTime()
+  
+    public void StartTime()
     {
-        return timeSinceLevelLoaded;
+        timeInMainMenu = (int)Time.time;
+
     }
+
+
 
  
 }
