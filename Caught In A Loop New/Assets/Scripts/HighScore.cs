@@ -6,74 +6,53 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.WSA;
 
+
 public class HighScore : MonoBehaviour
 {
-
-    public String Path_To_File;
-    String[] ScoreArray;
     public Text highScoreText;
-    int current;
-    StreamWriter write;
+    int highScore;
+    private int currentScore;
+
+
 
     // Start is called before the first frame update
     void Start()
     {
-       
-        Path_To_File = "./Assets/GameOver/hej.txt";
-
         
-        
-
-        addToFile(current);
-    
-        openFile();
-        setNewHighScore();
-        
-        
-
-
-    }
-
-    private void openFile()
-    {
-        write = new StreamWriter(Path_To_File);
-        ScoreArray = write.ToString().Split(";");
-        
-    }
-
-    private void addToFile(int score)
-    {
-        write.Write(score + ";");
-        
-    }
-
-    private void setNewHighScore()
-    {
-        write.Close();
-        openFile();
-
-        if (ScoreArray.Length == 1)
+        Console.WriteLine(highScoreText.text);
+        currentScore = TimeSinceLevelLoad.getTime();
+        if (PlayerPrefs.HasKey("hiScore"))
         {
-            highScoreText.text = ScoreArray[0];
-            return;
-        }
-        
-        int currentEntry = int.Parse(ScoreArray[0]);
-       for (int i = 1; i < ScoreArray.Length; i++)
-        {
-                if (int.Parse(ScoreArray[i]) < currentEntry)
+            {
+                if (currentScore > PlayerPrefs.GetInt("hiScore"))
                 {
-                    currentEntry = int.Parse(ScoreArray[i]);
+                    highScore = currentScore;
+                    PlayerPrefs.SetInt("hiScore", highScore);
+                    PlayerPrefs.Save();
                 }
-            
+            }
         }
-       
-       highScoreText.text = currentEntry.ToString();
+
+        else
+        {
+            highScore = currentScore;
+            PlayerPrefs.SetInt("hiScore", TimeSinceLevelLoad.getTime());
+            PlayerPrefs.Save();
+
+        }
+
+        
+        int highScoreToShow = PlayerPrefs.GetInt("hiScore", currentScore);
+        highScoreText.text = highScoreToShow.ToString();
+
+
+
     }
 
     // Update is called once per frame
     void Update()
-    {
-        
+        {
+
     }
-}
+    }
+

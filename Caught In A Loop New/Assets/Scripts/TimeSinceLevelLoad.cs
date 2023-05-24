@@ -14,6 +14,7 @@ public class TimeSinceLevelLoad : MonoBehaviour
     public Text gameOverTime;
     int totalTime = 0;
     double timeInMainMenu = 0;
+    private static int timeCalculated;
     
     void Start()
     {
@@ -30,8 +31,8 @@ public class TimeSinceLevelLoad : MonoBehaviour
         Scene scene = SceneManager.GetActiveScene();
         if (scene.name == "GameOver" || scene.name == "GameOver_TimeRanOut")
         {
-
-            gameOverTime.text = totalTime - timeInMainMenu + "s";
+            timeCalculated = (int)(totalTime - timeInMainMenu);
+            gameOverTime.text = timeCalculated + "s";
         } else
         {
             totalTime = (int)Time.time;
@@ -49,6 +50,11 @@ public class TimeSinceLevelLoad : MonoBehaviour
     {
         timeInMainMenu = (int)Time.time;
 
+    }
+
+    public static int getTime()
+    {
+        return timeCalculated;
     }
 
 
