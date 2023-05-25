@@ -24,6 +24,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Choice1 - Door or Window.unity
     guid: d7acb96edd3253043be19f55221a65c7
   - enabled: 1
+    path: Assets/Scenes/Achievements.unity
+    guid: 4242c08aad1318444a49f4f89fde32db
+  - enabled: 1
     path: Assets/Scenes/Choice cctv or room.unity
     guid: 05cd15c6858a7c74eb3dcf573bbb62b7
   - enabled: 1
