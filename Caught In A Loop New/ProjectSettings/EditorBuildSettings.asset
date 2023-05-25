@@ -6,6 +6,117 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 2cda990e2423bbf4892e6590ba056729
-  m_configObjects: {}
+    path: Assets/Scenes/MainMenu.unity
+    guid: daf91e1dbd3534f03b5800dd2f22e5a1
+  - enabled: 1
+    path: Assets/Scenes/Scene 1.unity
+    guid: c401e78fea36b324e87ad706723a1712
+  - enabled: 1
+    path: Assets/Scenes/Choice Stay or not.unity
+    guid: e87a850ea70cbb647b7140ae7ea63764
+  - enabled: 1
+    path: Assets/Scenes/Staying put.unity
+    guid: 1b8510bb766e7c3499eed8c59a4c5e23
+  - enabled: 1
+    path: Assets/Scenes/Get Clue.unity
+    guid: 4ee939590529ac841a8d6d2d263c2673
+  - enabled: 1
+    path: Assets/Scenes/Choice1 - Door or Window.unity
+    guid: d7acb96edd3253043be19f55221a65c7
+  - enabled: 1
+    path: Assets/Scenes/Choice cctv or room.unity
+    guid: 05cd15c6858a7c74eb3dcf573bbb62b7
+  - enabled: 1
+    path: Assets/Scenes/Choice wire.unity
+    guid: 9592faad6eede5e40b27fa92a0858f39
+  - enabled: 1
+    path: Assets/Scenes/YellowWire.unity
+    guid: d45a99e13b5c02e46a3c871d70098be9
+  - enabled: 1
+    path: Assets/Scenes/PurpleWire.unity
+    guid: fb75dbbc59ae07545a4000e441f90770
+  - enabled: 1
+    path: Assets/Scenes/CheckDoor.unity
+    guid: 8690ba35fd4db4d4d883dcb7d6739279
+  - enabled: 1
+    path: Assets/Scenes/CheckWindow.unity
+    guid: 427a1cc08202527408093ebe11de9f8c
+  - enabled: 1
+    path: Assets/Scenes/Choice2 - Box or Vent.unity
+    guid: 35336bdaba0768542ae247bb21bd4874
+  - enabled: 1
+    path: Assets/Scenes/CheckVent.unity
+    guid: 0275c40ca7671284ca58c3bcac5ee89a
+  - enabled: 1
+    path: Assets/Scenes/Check Box intro.unity
+    guid: 322cb8e65c74ec14daf07c29c252b9f4
+  - enabled: 1
+    path: Assets/Scenes/CheckBox.unity
+    guid: c0d3957bcbb41f64dadf2fbd18e1f93f
+  - enabled: 1
+    path: Assets/Scenes/InspectBox intro.unity
+    guid: 2de38d6d840ca2f41b837dba7563a0b7
+  - enabled: 1
+    path: Assets/Scenes/InspectBox.unity
+    guid: ba163697c2a80e947be34eb7cb4b5938
+  - enabled: 1
+    path: Assets/Scenes/Button electric.unity
+    guid: 46fb9b6c71c222941b5ddab08c22efc2
+  - enabled: 1
+    path: Assets/Scenes/Button get key.unity
+    guid: e47471085e8ebc24298de4932b40a8d5
+  - enabled: 1
+    path: Assets/Scenes/SmashBox.unity
+    guid: cdd8f00ba58000c4080c11beacfe6419
+  - enabled: 1
+    path: Assets/Scenes/Stealth Ending.unity
+    guid: 54fc3acd62383344bb88de7f1eedc994
+  - enabled: 1
+    path: Assets/Scenes/Killer walks.unity
+    guid: 7bb9fa30287d4e147b9c1b0dad6dc2d6
+  - enabled: 1
+    path: Assets/Scenes/weapon choice.unity
+    guid: fce64322c74cea345a344405adee8d95
+  - enabled: 1
+    path: Assets/Scenes/KeyStab.unity
+    guid: cd847dcf015076041bc9a6b3817ec105
+  - enabled: 1
+    path: Assets/Scenes/Fist fight.unity
+    guid: ae43398168bbe6a43b452ee92dc04188
+  - enabled: 1
+    path: Assets/Scenes/Fight Ending.unity
+    guid: 48e589e9a1fc7da42a12fb88274e5380
+  - enabled: 1
+    path: Assets/Scenes/Running away.unity
+    guid: 3b4a4794262f30240bd68f2ced8adab7
+  - enabled: 1
+    path: Assets/Scenes/Elevator.unity
+    guid: 536a5f162f02d114fb2b0e6ceff89309
+  - enabled: 1
+    path: Assets/Scenes/Stairs.unity
+    guid: fd0d4c2ef61bfb241b0c440679f50c38
+  - enabled: 1
+    path: Assets/Scenes/DownStairs.unity
+    guid: 16b601cfda20bea49b6818176cd2c2a9
+  - enabled: 1
+    path: Assets/Scenes/UpStairs.unity
+    guid: 4ad5c7c14006d0b4d9903975d4cfae83
+  - enabled: 1
+    path: Assets/Scenes/GameOver.unity
+    guid: bb8f065949f984f318e61dbc7fe2eec9
+  - enabled: 1
+    path: Assets/Scenes/Victory.unity
+    guid: e3d3773036f7ad34a930ee0777643c51
+  - enabled: 1
+    path: Assets/Scenes/SceneSelector.unity
+    guid: 73c18f11858224bd8959932200ccdc99
+  - enabled: 1
+    path: Assets/Scenes/GameOver_TimeRanOut.unity
+    guid: 48d9e02233b6bbc4d90a2899063f865f
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  m_configObjects:
+    com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: 96e42b5b6c7e86e4da3670eed9de19b4, type: 2}
+    com.unity.adaptiveperformance.samsung.android.provider_settings: {fileID: 11400000, guid: 7c457a3f0226ce6489b0dc94106961d7, type: 2}
+    com.unity.adaptiveperformance.simulator.provider_settings: {fileID: 11400000, guid: 06c0d0478e6be134db89e3fd97e32ab7, type: 2}
