@@ -11,7 +11,10 @@ public class VideoPlayback : MonoBehaviour
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
     [SerializeField] private string nextScene;
-    
+    private double time;
+    private double currentTime;
+
+
 
 
     private void Awake()
@@ -27,7 +30,15 @@ public class VideoPlayback : MonoBehaviour
 
     private void Update()
     {
-        if (videoPlayer.isPaused)
+        if(videoClipIndex == (videoClips.Length - 1)){
+            time = gameObject.GetComponent<VideoPlayer>().clip.length;
+            currentTime = gameObject.GetComponent<VideoPlayer>().time;
+            if (currentTime >= time)
+            {
+                PlayNextVideo();
+            }
+        }
+        else if (videoPlayer.isPaused && PauseMenu.gameIsPaused == false)
         {
             PlayNextVideo();
         }
@@ -45,5 +56,15 @@ public class VideoPlayback : MonoBehaviour
             videoPlayer.clip = videoClips[videoClipIndex];
         }
         
+    }
+
+    public void PauseVideo()
+    {
+        videoPlayer.Pause();
+    }
+
+    public void ResumeVideo()
+    {
+        videoPlayer.Play();
     }
 }

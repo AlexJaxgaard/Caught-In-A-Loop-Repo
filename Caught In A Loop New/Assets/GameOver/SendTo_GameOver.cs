@@ -10,12 +10,19 @@ public class SendTo_GameOver : MonoBehaviour
 {
     private VideoPlayer videoPlayer;
     public Text m_MyText;
-        public string Text_To_Write;
+    public string Text_To_Write;
+    private double time;
+    private double currentTime;
 
 
     private void Awake()
     {
         videoPlayer = GetComponent<VideoPlayer>();
+    }
+
+    private void Start()
+    {
+        time = gameObject.GetComponent<VideoPlayer>().clip.length;
     }
 
     public void LoadScene()
@@ -26,7 +33,8 @@ public class SendTo_GameOver : MonoBehaviour
 
     private void Update()
     {
-        if (videoPlayer.isPaused)
+        currentTime = gameObject.GetComponent<VideoPlayer>().time;
+        if (currentTime >= time)
         {
             LoadScene();
         }
