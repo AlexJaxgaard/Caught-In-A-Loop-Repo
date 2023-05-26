@@ -293,6 +293,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 1943472815}
     m_Modifications:
     - target: {fileID: 9086599971887204732, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9086599971887204732, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
       propertyPath: textToChange
       value: 
       objectReference: {fileID: 1084689279}
@@ -420,7 +424,8 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 9086599971887204732, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
 --- !u!224 &661796900 stripped
 RectTransform:
@@ -792,6 +797,39 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 78c637a20219eae44bac58026b4389de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1478134410 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9086599971887204735, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
+  m_PrefabInstance: {fileID: 661796899}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1478134412 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 9086599971887204733, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
+  m_PrefabInstance: {fileID: 661796899}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478134410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1478134413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1478134410}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f142256febb55c64998fdb305b2d9287, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SliderToUse: {fileID: 1478134412}
+  textToChange: {fileID: 1084689279}
+  targetTime: 60
+  videoClips:
+  - {fileID: 32900000, guid: 29873a450443fec4dac4e1fb894105aa, type: 3}
 --- !u!1 &1564477748
 GameObject:
   m_ObjectHideFlags: 0
@@ -1080,7 +1118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoClips:
   - {fileID: 32900000, guid: 29873a450443fec4dac4e1fb894105aa, type: 3}
-  nextScene: 
+  nextScene: YellowWire
 --- !u!328 &1813139503
 VideoPlayer:
   m_ObjectHideFlags: 0

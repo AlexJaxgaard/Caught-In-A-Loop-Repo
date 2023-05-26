@@ -23,8 +23,17 @@ public class TimeSinceLevelLoad_GameOver : MonoBehaviour
     private static float timeCalculated;
     private float cutsceneTime = 0;
     private float sceneOneLoadedTimes = 0;
-    
-
+    private static GameObject instance = null;
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = gameObject;
+            DontDestroyOnLoad(this.gameObject);
+            return;
+        }
+        Destroy(this.gameObject);
+    }
 
     void Start()
     {
@@ -45,15 +54,15 @@ public class TimeSinceLevelLoad_GameOver : MonoBehaviour
         timeCalculated = getTime();
         Debug.Log(timeCalculated);
         Scene scene = SceneManager.GetActiveScene();
-        Debug.Log(scene.name);
+
         if (scene.GetRootGameObjects().Contains(GameObject.FindGameObjectWithTag("PauseMenu")))
         {
-            Debug.Log("Timer paused");
+            
             cutsceneTime += Time.deltaTime;
         }
         else if (scene.name == "GameOver" || scene.name == "GameOver_TimeRanOut")
         {
-            Debug.Log("GameOver current scene");
+            
 
             gameOverTime.text = timeCalculated + "s";
             resetTimer();
@@ -61,17 +70,17 @@ public class TimeSinceLevelLoad_GameOver : MonoBehaviour
         else if (scene.name == "MainMenu")
         {
             
-            Debug.Log("Main Menu current scene");
+
             resetTimer();
 
-        }
+        } 
         
 
 
         else
         {
             totalTime += Time.deltaTime;
-            Debug.Log("Counting time..");
+
 
         }
         gameOverTime.text = timeCalculated + "s";

@@ -134,6 +134,7 @@ GameObject:
   - component: {fileID: 747812294}
   - component: {fileID: 747812293}
   - component: {fileID: 747812295}
+  - component: {fileID: 747812296}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -196,9 +197,23 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 747812291}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: dd77f21c1ca5245709fee088d6a5e922, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyText: {fileID: 4259218609327590844, guid: fbc5dbf6f70024802a0b2a90a053889c, type: 3}
+  Text_To_Write: You were too weak
+--- !u!114 &747812296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 747812291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c84a750e9fac64a946f7dd02904bb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_MyText: {fileID: 4259218609327590844, guid: fbc5dbf6f70024802a0b2a90a053889c, type: 3}

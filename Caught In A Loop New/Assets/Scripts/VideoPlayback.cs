@@ -32,7 +32,7 @@ public class VideoPlayback : MonoBehaviour
     {
         if(videoClipIndex == (videoClips.Length - 1)){
             time = gameObject.GetComponent<VideoPlayer>().clip.length;
-            currentTime = gameObject.GetComponent<VideoPlayer>().time;
+            currentTime += Time.deltaTime;
             if (currentTime >= time)
             {
                 PlayNextVideo();
