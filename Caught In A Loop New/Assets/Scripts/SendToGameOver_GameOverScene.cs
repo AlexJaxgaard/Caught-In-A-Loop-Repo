@@ -25,13 +25,13 @@ public class SendToGameOver_GameOverScene : MonoBehaviour
         time = gameObject.GetComponent<VideoPlayer>().clip.length;
     }
 
-    public void LoadScene()
+    public void LoadScene()//lets you write in unity the reason for the "game over"
     {
         m_MyText.text = Text_To_Write;
         SceneManager.LoadScene("GameOver");
     }
 
-    private void Update()
+    private void Update()//when video ends load game over
     {
         currentTime = gameObject.GetComponent<VideoPlayer>().time;
         if (currentTime >= time || videoPlayer.isPaused)

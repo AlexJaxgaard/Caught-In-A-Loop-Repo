@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   videoClips:
-  - {fileID: 32900000, guid: 66f14aac351677442b00aefb4e3c67bc, type: 3}
+  - {fileID: 32900000, guid: 4eb11768bc2997d4296edf437a10bb4d, type: 3}
   nextScene: Victory
 --- !u!328 &457338005
 VideoPlayer:

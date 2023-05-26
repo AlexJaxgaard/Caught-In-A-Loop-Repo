@@ -17,18 +17,18 @@ public class VideoPlayback : MonoBehaviour
 
 
 
-    private void Awake()
+    private void Awake() //finds video player component
     {
         videoPlayer = GetComponent<VideoPlayer>();
     }
 
-    // Start is called before the first frame update
-    void Start()
+    
+    void Start() //Video Clip array
     {
         videoPlayer.clip = videoClips[0];
     }
 
-    private void Update()
+    private void Update() // checks if video is done playing, and checks if the video is paused because of the menu
     {
         if(videoClipIndex == (videoClips.Length - 1)){
             time = gameObject.GetComponent<VideoPlayer>().clip.length;
@@ -44,7 +44,7 @@ public class VideoPlayback : MonoBehaviour
         }
     }
 
-    public void PlayNextVideo()
+    public void PlayNextVideo() //plays next video in array until all videos are done, then moves on to next scene
     {
         videoClipIndex++;
         if(videoClipIndex >= videoClips.Length)

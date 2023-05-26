@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+
 public class Achievements_Script : MonoBehaviour
 {
     [SerializeField] private GameObject patientDetHidden;
@@ -18,33 +19,21 @@ public class Achievements_Script : MonoBehaviour
     [SerializeField] private GameObject mysteryShown;
     [SerializeField] private Scene scene;
 
-
-    public string GetAchievementStatus()
+    void Start()
     {
-        ArrayList achList = new();
-        achList.Add("Patient Detective");
-        achList.Add("Fighter Ending");
-        achList.Add("Stealth Ending");
-        achList.Add("Mystery Ending");
-        //...
 
-        //if (getSceneName &&)
-        return null;
+        patientDetHidden.SetActive(!EndingTracker.patient);
+        patientDetShown.SetActive(EndingTracker.patient);
+
+        fighterHidden.SetActive(!EndingTracker.fightEnding);
+        fighterShown.SetActive(EndingTracker.fightEnding);
+
+        stealthyHidden.SetActive(!EndingTracker.stealthEnding);
+        stealthyShown.SetActive(EndingTracker.stealthEnding);
+
+        mysteryHidden.SetActive(!EndingTracker.mysteryEnding);
+        mysteryShown.SetActive(EndingTracker.mysteryEnding);
     }
+
     
-    public static void AchievementTracker()
-    {
-        
-    }
-
-    public void Update()
-    {
-        Debug.Log(scene.name);
-        scene = SceneManager.GetActiveScene();
-        if (scene.name.Equals("Stealth Ending"))
-        {
-            stealthyHidden.SetActive(false);
-            stealthyShown.SetActive(true);
-        }
-    }
 }
