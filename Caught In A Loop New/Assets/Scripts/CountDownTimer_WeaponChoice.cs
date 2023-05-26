@@ -11,7 +11,7 @@ public class CountDownTimer : MonoBehaviour
 {
     public Slider SliderToUse;
     public Text textToChange;
-    public float targetTime = 60.0f;
+    public double targetTime;
     [SerializeField] private VideoClip[] videoClips;
 
 
@@ -19,8 +19,8 @@ public class CountDownTimer : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        targetTime = (float)videoClips[0].length;
-        SliderToUse.maxValue = targetTime;
+        targetTime = videoClips[0].length;
+        SliderToUse.maxValue = (float)targetTime;
         
     }
 
@@ -32,7 +32,7 @@ public class CountDownTimer : MonoBehaviour
         
 
         
-        SliderToUse.value = targetTime;
+        SliderToUse.value = (float)targetTime;
         int toText = (int)targetTime;
         textToChange.text = toText.ToString() + "s remaining";
         
@@ -51,7 +51,7 @@ public class CountDownTimer : MonoBehaviour
     void timerEnded()
     {
         
-        SceneManager.LoadScene("GameOver_TimeRanOut");
+       
     }
 
 
