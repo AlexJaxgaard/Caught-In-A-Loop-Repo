@@ -19,6 +19,9 @@ public class Achievements_Script : MonoBehaviour
     [SerializeField] private Scene scene;
 
 
+    private static bool patient;
+
+
     public string GetAchievementStatus()
     {
         ArrayList achList = new();
@@ -37,14 +40,25 @@ public class Achievements_Script : MonoBehaviour
         
     }
 
-    public void Update()
+    /*public void Update()
     {
         Debug.Log(scene.name);
         scene = SceneManager.GetActiveScene();
-        if (scene.name.Equals("Stealth Ending"))
+        if (patient == true;)
         {
-            stealthyHidden.SetActive(false);
+            stealthyHidden.SetActive(fa);
             stealthyShown.SetActive(true);
         }
+    }*/
+
+    void Start()
+    {
+        stealthyHidden.SetActive(!patient);
+        stealthyShown.SetActive(patient);
+    }
+
+    public void PatientReached()
+    {
+        patient = true;
     }
 }
