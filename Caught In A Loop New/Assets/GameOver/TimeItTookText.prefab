@@ -11,13 +11,12 @@ GameObject:
   - component: {fileID: 4463078570528698271}
   - component: {fileID: 8937868341595847286}
   - component: {fileID: 3948077003371952672}
-  - component: {fileID: 5951593915851180813}
   m_Layer: 5
   m_Name: TimeItTookText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!224 &4463078570528698271
 RectTransform:
@@ -80,17 +79,4 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 12,8958225250244s
---- !u!114 &5951593915851180813
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1450026366262036475}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f69c89692691b4783244280a5bfece, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  gameOverTime: {fileID: 0}
+  m_Text: 0s

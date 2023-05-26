@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4259218609327590843}
   - component: {fileID: 4259218609327590845}
   - component: {fileID: 4259218609327590844}
+  - component: {fileID: 4472204935587793859}
   m_Layer: 5
   m_Name: GameOver_ReasonText
   m_TagString: Untagged
@@ -80,3 +81,16 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: --
+--- !u!114 &4472204935587793859
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4259218609327590842}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7d8c0f40c6dd44d4784041b98bdb2a64, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  highScoreText: {fileID: 4259218609327590844}
