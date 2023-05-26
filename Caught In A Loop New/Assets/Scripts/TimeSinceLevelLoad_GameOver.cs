@@ -4,29 +4,83 @@
 
 //This script outputs the time since the last level load. It also allows you to load a new Scene by pressing the Button. When this new Scene loads, the time resets and updates.
 
+using System.IO;
 using System.Linq;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
+using System.Collections.Generic;
+
+
 
 public class TimeSinceLevelLoad_GameOver : MonoBehaviour
 {
     public static Button m_MyButton;
     public Text gameOverTime;
-    int totalTime = 0;
-    private static int timeCalculated;
-    private string[] cutsceneList;
-    private int cutsceneTime = 0;
+    float totalTime = 0;
+    private static float timeCalculated;
+    private float cutsceneTime = 0;
+    private float sceneOneLoadedTimes = 0;
+    
+
 
     void Start()
     {
+
+
+
+
         // Don't destroy the GameObject when loading a new Scene
         DontDestroyOnLoad(gameObject);
-        InvokeRepeating("addSecond", 1f, 1f);  //1s delay, repeat every 1s
 
 
     }
+
+    float sekundVisare = 0f;
+    private void Update()
+    {
+        Time.timeScale = 1f;
+        timeCalculated = getTime();
+        Debug.Log(timeCalculated);
+        Scene scene = SceneManager.GetActiveScene();
+        Debug.Log(scene.name);
+        if (scene.GetRootGameObjects().Contains(GameObject.FindGameObjectWithTag("PauseMenu")))
+        {
+            Debug.Log("Timer paused");
+            cutsceneTime += Time.deltaTime;
+        }
+        else if (scene.name == "GameOver" || scene.name == "GameOver_TimeRanOut")
+        {
+            Debug.Log("GameOver current scene");
+
+            gameOverTime.text = timeCalculated + "s";
+            resetTimer();
+        }
+        else if (scene.name == "MainMenu")
+        {
+            
+            Debug.Log("Main Menu current scene");
+            resetTimer();
+
+        }
+        
+
+
+        else
+        {
+            totalTime += Time.deltaTime;
+            Debug.Log("Counting time..");
+
+        }
+        gameOverTime.text = timeCalculated + "s";
+    }
+
+    
+        
+    
+
 
 
     public int getTime()
@@ -34,36 +88,19 @@ public class TimeSinceLevelLoad_GameOver : MonoBehaviour
         return (int)(totalTime - cutsceneTime);
     }
 
-    private void addSecond()
-    {
-        timeCalculated = getTime();
-        Scene scene = SceneManager.GetActiveScene();
-        Debug.Log(totalTime);
-        if (scene.GetRootGameObjects().Contains(GameObject.FindGameObjectWithTag("PauseMenu")))
-        {
-            cutsceneTime++;
-        } else if (scene.name == "GameOver" || scene.name == "GameOver_TimeRanOut")
-        {
-            gameOverTime.text = timeCalculated + "s";
-            timeCalculated = 0;
-            cutsceneTime = 0;
-            totalTime = 0;
-        }  else if (scene.name == "MainMenu")
-        {
-            gameOverTime.text = timeCalculated + "s";
-            for (int i = 0; i < GameObject.FindGameObjectsWithTag("TimeTracker").Length; i++)
-            {
-                Destroy(GameObject.FindGameObjectWithTag("TimeTracker"));
-            }
+    
 
-        }
-        
-        
-        else
-        {
-            totalTime++;
-        }
-        gameOverTime.text = timeCalculated + "s";
+    private void resetTimer()
+    {
+        timeCalculated = 0;
+        cutsceneTime = 0;
+        totalTime = 0;
+  
+    }
+
+    private bool sceneOneLoadedBefore()
+    {
+        return sceneOneLoadedTimes > 0;
     }
 
 
