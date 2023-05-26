@@ -206,7 +206,7 @@ GameObject:
   - component: {fileID: 1430177343043026582}
   m_Layer: 5
   m_Name: PauseButton
-  m_TagString: PauseMenu
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -229,7 +229,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 824, y: 421}
+  m_AnchoredPosition: {x: 596.131, y: 249.7514}
   m_SizeDelta: {x: 119.594, y: 108.7917}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1430177343043026576
@@ -1030,7 +1030,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7507414107803425487}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 32.86902, y: 14.248596, z: -19.598795}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
