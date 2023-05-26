@@ -11,8 +11,13 @@ public class DoNotDestroyMenu : MonoBehaviour
 
     private bool inGame;
 
-    private void Awake()
+    private void Awake()// create AudioSource object
     {
+        GameObject[] musicObj = GameObject.FindGameObjectsWithTag("BackgroundMusic");
+        if(musicObj.Length > 1) //check for Duplicated AudioSource Objects, if more than 1, destroy the latest one
+        {
+            Destroy(this.gameObject);
+        }
         DontDestroyOnLoad(this.gameObject);
         audioSource = GetComponent<AudioSource>();
         inGame = false;

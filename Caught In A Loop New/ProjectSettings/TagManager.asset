@@ -9,6 +9,8 @@ TagManager:
   - TimeItTookText
   - PauseMenu
   - TimeTracker
+  - BackgroundMusic
+  - EndingTracker
   layers:
   - Default
   - TransparentFX

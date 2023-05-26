@@ -5,18 +5,35 @@ using UnityEngine.SceneManagement;
 
 public class EndingTracker : MonoBehaviour
 {
+   
 
 
-    private static bool stealthEnding;
+    public static bool stealthEnding;
+    public static bool fightEnding;
+    public static bool mysteryEnding;
+    public static bool patient;
 
     void Update()
     {
-       
-    }
+        Scene scene = SceneManager.GetActiveScene();
 
-    public void StealthEndingReached()
-    {
-        stealthEnding = true;
+        if(scene.name.Equals("Stealth Ending") || scene.name.Equals("Button get key"))
+        {
+            stealthEnding = true;
+        }
+        if (scene.name.Equals("DownStairs"))
+        {
+            mysteryEnding = true;
+        }
+        if (scene.name.Equals("Fight Ending"))
+        {
+            fightEnding = true;
+        }
+        if (scene.name.Equals("Get Clue"))
+        {
+            patient = true;
+        }
+
     }
 
 }
