@@ -7,6 +7,8 @@ TagManager:
   - MenuMusic
   - GameMusic
   - TimeItTookText
+  - PauseMenu
+  - TimeTracker
   layers:
   - Default
   - TransparentFX
