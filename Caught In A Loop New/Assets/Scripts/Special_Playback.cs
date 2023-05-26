@@ -12,6 +12,8 @@ public class Special_Playback : MonoBehaviour
     private VideoPlayer videoPlayer;
     private int videoClipIndex;
     private string sceneName;
+    private double time;
+    private double currentTime;
 
 
 
@@ -25,11 +27,13 @@ public class Special_Playback : MonoBehaviour
     void Start()
     {
         videoPlayer.clip = videoClips[0];
+        time = gameObject.GetComponent<VideoPlayer>().clip.length;
     }
 
     private void Update()
     {
-        if (videoPlayer.isPaused)
+        currentTime = gameObject.GetComponent<VideoPlayer>().time;
+        if (currentTime >= time)
         {
             PlayNextVideo();
         }
@@ -62,4 +66,15 @@ public class Special_Playback : MonoBehaviour
             sceneName = defaultScene;
         }
     }
+
+    public void PauseVideo()
+    {
+        videoPlayer.Pause();
+    }
+
+    public void ResumeVideo()
+    {
+        videoPlayer.Play();
+    }
+
 }

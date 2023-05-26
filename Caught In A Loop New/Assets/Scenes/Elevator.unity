@@ -133,7 +133,6 @@ GameObject:
   m_Component:
   - component: {fileID: 173013742}
   - component: {fileID: 173013741}
-  - component: {fileID: 173013740}
   - component: {fileID: 173013743}
   m_Layer: 0
   m_Name: Video Player
@@ -142,21 +141,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &173013740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 173013739}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fbba5d99c0c9584eae57ecd16955985, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  videoClips:
-  - {fileID: 32900000, guid: 5be11299f4645f64aac7cc1bf6972f3e, type: 3}
-  nextScene: GameOver
 --- !u!328 &173013741
 VideoPlayer:
   m_ObjectHideFlags: 0
@@ -165,7 +149,7 @@ VideoPlayer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173013739}
   m_Enabled: 1
-  m_VideoClip: {fileID: 0}
+  m_VideoClip: {fileID: 32900000, guid: 5be11299f4645f64aac7cc1bf6972f3e, type: 3}
   m_TargetCameraAlpha: 1
   m_TargetCamera3DLayout: 0
   m_TargetCamera: {fileID: 0}
