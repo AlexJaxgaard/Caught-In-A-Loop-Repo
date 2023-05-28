@@ -5074,7 +5074,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: SCENE SELECTION
+  m_Text: SETTINGS
 --- !u!222 &133339960
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5646,7 +5646,7 @@ GameObject:
   - component: {fileID: 763483983}
   - component: {fileID: 763483986}
   m_Layer: 5
-  m_Name: SceneSelectionButton
+  m_Name: SettingsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
