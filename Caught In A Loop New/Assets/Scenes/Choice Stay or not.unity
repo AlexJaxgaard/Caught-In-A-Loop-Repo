@@ -161,7 +161,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 370, y: -250}
+  m_AnchoredPosition: {x: 288, y: -195}
   m_SizeDelta: {x: 147.6794, y: 64.9084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &143356689
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1f540b4d7ac11f84c9a88b78a4bf79d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe39c5e3a43221f47a0e017b3d6c6b55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -409,9 +409,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Stay put
-
-'
+  m_Text: Stay put
 --- !u!222 &885997876
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -783,7 +781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -370, y: -250}
+  m_AnchoredPosition: {x: -288, y: -195}
   m_SizeDelta: {x: 147.6794, y: 64.9084}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1649641368
@@ -874,7 +872,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 1f540b4d7ac11f84c9a88b78a4bf79d7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: fe39c5e3a43221f47a0e017b3d6c6b55, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -963,9 +961,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Explore the room
-
-'
+  m_Text: "Explore the \nroom"
 --- !u!222 &1872658746
 CanvasRenderer:
   m_ObjectHideFlags: 0
