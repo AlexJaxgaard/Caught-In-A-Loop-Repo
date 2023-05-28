@@ -455,8 +455,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1503143996}
   - component: {fileID: 1503143995}
-  - component: {fileID: 1503143997}
   - component: {fileID: 1503143998}
+  - component: {fileID: 1503143999}
   m_Layer: 0
   m_Name: Video Player
   m_TagString: Untagged
@@ -514,20 +514,6 @@ Transform:
   m_Father: {fileID: 975226490}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1503143997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1503143993}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd77f21c1ca5245709fee088d6a5e922, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_MyText: {fileID: 4259218609327590844, guid: fbc5dbf6f70024802a0b2a90a053889c, type: 3}
-  Text_To_Write: You alerted the kidnapper!
 --- !u!114 &1503143998
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -543,6 +529,20 @@ MonoBehaviour:
   videoClips:
   - {fileID: 32900000, guid: a3832efab1ada244cbcfb6c91eee9882, type: 3}
   nextScene: 
+--- !u!114 &1503143999
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1503143993}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c84a750e9fac64a946f7dd02904bb3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_MyText: {fileID: 4259218609327590844, guid: fbc5dbf6f70024802a0b2a90a053889c, type: 3}
+  Text_To_Write: You alerted the kidnapper!
 --- !u!1 &1554321475
 GameObject:
   m_ObjectHideFlags: 0

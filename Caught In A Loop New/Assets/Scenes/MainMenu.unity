@@ -5427,7 +5427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   videoClips:
   - {fileID: 32900000, guid: 31bec3039c726b74bb0dd617c764615e, type: 3}
-  nextScene: null
+  nextScene: MainMenu
 --- !u!328 &576232565
 VideoPlayer:
   m_ObjectHideFlags: 0
