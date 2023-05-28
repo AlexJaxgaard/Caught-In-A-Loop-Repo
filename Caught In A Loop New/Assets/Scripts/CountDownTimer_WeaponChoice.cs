@@ -13,12 +13,14 @@ public class CountDownTimer : MonoBehaviour
     public Text textToChange;
     public double targetTime;
     [SerializeField] private VideoClip[] videoClips;
+    private ParticleSystem particleSystemToUse;
 
 
 
     // Start is called before the first frame update
     void Start()
     {
+        particleSystemToUse = GetComponent<ParticleSystem>();
         targetTime = videoClips[0].length;
         SliderToUse.maxValue = (float)targetTime;
         
@@ -29,10 +31,11 @@ public class CountDownTimer : MonoBehaviour
     void Update()
     {
 
-        
+
 
         
         SliderToUse.value = (float)targetTime;
+        particleSystemToUse.startLifetime = SliderToUse.value;
         int toText = (int)targetTime;
         textToChange.text = toText.ToString() + "s remaining";
         

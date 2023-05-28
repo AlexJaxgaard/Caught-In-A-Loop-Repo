@@ -6,12 +6,6 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Prolog_Intro.unity
-    guid: f24915b9e351bab4cbfab62d5241abfd
-  - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: daf91e1dbd3534f03b5800dd2f22e5a1
-  - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: 4242c08aad1318444a49f4f89fde32db
   - enabled: 1
@@ -54,9 +48,6 @@ EditorBuildSettings:
     path: Assets/Scenes/Choice2 - Box or Vent.unity
     guid: 35336bdaba0768542ae247bb21bd4874
   - enabled: 1
-    path: Assets/Scenes/CountDown_Sandbox.unity
-    guid: 7864154cb12c9ad4096c0f67925bbdc3
-  - enabled: 1
     path: Assets/Scenes/DownStairs.unity
     guid: 16b601cfda20bea49b6818176cd2c2a9
   - enabled: 1
@@ -89,6 +80,12 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Killer walks.unity
     guid: 7bb9fa30287d4e147b9c1b0dad6dc2d6
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: daf91e1dbd3534f03b5800dd2f22e5a1
+  - enabled: 1
+    path: Assets/Scenes/Prolog_Intro.unity
+    guid: f24915b9e351bab4cbfab62d5241abfd
   - enabled: 1
     path: Assets/Scenes/PurpleWire.unity
     guid: fb75dbbc59ae07545a4000e441f90770

@@ -792,7 +792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: EXIT GAME
+  m_Text: RETURN TO MAIN MENU
 --- !u!222 &708547103
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -950,7 +950,7 @@ GameObject:
   - component: {fileID: 1511012428}
   - component: {fileID: 1511012431}
   m_Layer: 5
-  m_Name: ExitGameButton
+  m_Name: ReturnToMainMenuBtn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1022,15 +1022,15 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1511012431}
-        m_TargetAssemblyTypeName: ExitGame_Script, Assembly-CSharp
-        m_MethodName: doExitGame
-        m_Mode: 1
+        m_TargetAssemblyTypeName: SceneSelection_Script, Assembly-CSharp
+        m_MethodName: LoadScene
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: MainMenu
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1511012429
@@ -1080,7 +1080,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1511012426}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e31fa8f9db7c24f46a4d17dc14e59fd4, type: 3}
+  m_Script: {fileID: 11500000, guid: aa84426b5e04e45debb8db6107f5cfab, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1729234170
