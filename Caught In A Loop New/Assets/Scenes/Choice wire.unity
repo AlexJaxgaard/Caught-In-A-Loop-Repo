@@ -292,6 +292,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1943472815}
     m_Modifications:
+    - target: {fileID: 3038392471774877168, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 3197040203924922839, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
+      propertyPath: m_SortingOrder
+      value: -15
+      objectReference: {fileID: 0}
     - target: {fileID: 9086599971887204732, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -887,7 +895,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
