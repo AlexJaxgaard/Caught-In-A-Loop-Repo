@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: daf91e1dbd3534f03b5800dd2f22e5a1
+  - enabled: 1
     path: Assets/Scenes/Achievements.unity
     guid: 4242c08aad1318444a49f4f89fde32db
   - enabled: 1
@@ -81,8 +84,8 @@ EditorBuildSettings:
     path: Assets/Scenes/Killer walks.unity
     guid: 7bb9fa30287d4e147b9c1b0dad6dc2d6
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: daf91e1dbd3534f03b5800dd2f22e5a1
+    path: Assets/Scenes/MysteryVictory.unity
+    guid: 93b360c38a291094d83d1c229a66d515
   - enabled: 1
     path: Assets/Scenes/Prolog_Intro.unity
     guid: f24915b9e351bab4cbfab62d5241abfd
@@ -98,9 +101,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Scene 1.unity
     guid: c401e78fea36b324e87ad706723a1712
-  - enabled: 1
-    path: Assets/Scenes/MysteryVictory.unity
-    guid: 93b360c38a291094d83d1c229a66d515
   - enabled: 1
     path: Assets/Scenes/SceneSelector.unity
     guid: 73c18f11858224bd8959932200ccdc99
