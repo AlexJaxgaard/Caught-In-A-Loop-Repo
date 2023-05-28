@@ -114,6 +114,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Victory.unity
     guid: e3d3773036f7ad34a930ee0777643c51
   - enabled: 1
+    path: Assets/Scenes/MysteryVictory.unity
+    guid: 93b360c38a291094d83d1c229a66d515
+  - enabled: 1
     path: Assets/Scenes/SceneSelector.unity
     guid: 73c18f11858224bd8959932200ccdc99
   - enabled: 1
