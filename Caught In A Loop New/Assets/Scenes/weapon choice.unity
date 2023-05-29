@@ -377,7 +377,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -605,7 +605,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -916,7 +916,7 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_HighlightedColor: {r: 0.5372549, g: 0.5372549, b: 0.5372549, a: 1}
     m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
@@ -1163,7 +1163,7 @@ PrefabInstance:
     - target: {fileID: 9086599971887204733, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1592512783}
+      objectReference: {fileID: 0}
     - target: {fileID: 9086599971887204733, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
       propertyPath: m_OnValueChanged.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
       value: 2
@@ -1337,11 +1337,6 @@ MonoBehaviour:
   targetTime: 60
   videoClips:
   - {fileID: 32900000, guid: 4c09bcaaec017a4448ddeb7e6cdf4eef, type: 3}
---- !u!1 &1592512783 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3038392471774877168, guid: d52161be0a60d1a4cb9c9a09ce9fa0a8, type: 3}
-  m_PrefabInstance: {fileID: 1592512778}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1608271716
 GameObject:
   m_ObjectHideFlags: 0
